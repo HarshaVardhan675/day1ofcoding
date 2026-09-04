@@ -90,19 +90,83 @@
             
 #     return maxpassengers
 # print(max_passengers(2)
-hours=int(input("enter the hour: "))
-minutes=int(input("enter the minutes: "))
-print(hours ,minutes)
-hourhand=hours*30
-extra=(1/2)*minutes
-angleofhourhand=hourhand+extra
-minute_hand=minutes*6
-if minute_hand>angleofhourhand:
-    difference_of_angle=minute_hand-angleofhourhand
-if minute_hand<angleofhourhand:
-    difference_of_angle=angleofhourhand-minute_hand
-if difference_of_angle>=180:
-    print(360-difference_of_angle)
+# hours=int(input("enter the hour: "))
+# minutes=int(input("enter the minutes: "))
+# print(hours ,minutes)
+# hourhand=hours*30
+# extra=(1/2)*minutes
+# angleofhourhand=hourhand+extra
+# minute_hand=minutes*6
+# if minute_hand>angleofhourhand:
+#     difference_of_angle=minute_hand-angleofhourhand
+# if minute_hand<angleofhourhand:
+#     difference_of_angle=angleofhourhand-minute_hand
+# if difference_of_angle>=180:
+#     print(360-difference_of_angle)
+expenses=[]
+def add_expense():
+    amount=float(input("Enter the expense: "))
+    category=input("Enter which category it belongs: ")
+    description=input("Enter the description: ")
+    expense={"amount":amount,
+             "category":category,
+             "description":description}
+    expenses.append(expense)
+    print("expense added succesfully")
+def view_expenses():
+    for expense in expenses:
+        print(expense)   
+def total_spending():
+
+    total = 0
+
+    for expense in expenses:
+        total += expense["amount"]
+
+    print(f"\nTotal Spending = {total}\n")
+
+def category_summary():
+    summary={}
+    for expense in expenses:
+        category=expense["category"]
+        if category not in summary:
+            summary[category]=0
+        summary[category]+=expense["amount"] 
+    for category in summary:
+        
+
+        print(category,":",summary[category])    
+
+while True:
+    print("________EXPENSE TRACKER_______")
+    print("1.Add Expense")
+    print("2.View Expense")
+    print("3.Total Spending")
+    print("4.Category Summary")
+    print("5.Exit")
+    choice=input()
+    if choice == "1":
+        add_expense()
+
+    elif choice == "2":
+        view_expenses()
+
+    elif choice == "3":
+        total_spending()
+
+    elif choice == "4":
+        category_summary()
+
+    elif choice == "5":
+        print("Thank You!")
+        break
+
+    else:
+        print("Invalid Choice\n")
+
+
+
+
 
 
 
