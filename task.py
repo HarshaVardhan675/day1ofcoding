@@ -197,15 +197,39 @@
 # for numbers in newnums:
 #     maximum2=max(maximum2,numbers)
 # print(maximum2)   
-nums = [1,2,4,5,8,9]
+# nums = [1,2,4,5,8,9]
 
-for i in range(len(nums)-1):
+# for i in range(len(nums)-1):
 
-    current = nums[i]
-    next_num = nums[i+1]
+#     current = nums[i]
+#     next_num = nums[i+1]
 
-    for missing in range(current + 1, next_num):
-        print(missing)
+#     for missing in range(current + 1, next_num):
+#         print(missing)
+s = input("Enter a string: ")
+
+freq = {}
+
+for ch in s:
+    if ch in freq:
+        freq[ch] += 1
+    else:
+        freq[ch] = 1
+
+max_char = ""
+max_freq = 0
+
+for ch in freq:
+    if freq[ch] > max_freq:
+        max_freq = freq[ch]
+        max_char = ch
+
+print("Character with highest frequency:", max_char)
+print("Frequency:", max_freq)
+
+
+
+
 
 
          
