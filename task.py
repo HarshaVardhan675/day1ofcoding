@@ -163,15 +163,26 @@
 
 #     else:
 #         print("Invalid Choice\n")
-nums=[2,4,6,7,8]
-newnums=[]
-for i in range(len(nums)):
-    product=1
-    for j in range(len(nums)):
-        if i!=j:
-            product=product*nums[j]
-    newnums.append(product)
-print(newnums)   
+# nums=[2,4,6,7,8]
+# newnums=[]
+# for i in range(len(nums)):
+#     product=1
+#     for j in range(len(nums)):
+#         if i!=j:
+#             product=product*nums[j]
+#     newnums.append(product)
+# print(newnums)   
+def grouping(words):
+    group={}
+    for word in words:
+        key=sorted(word)
+        key=str(key)
+        if key not in group:
+            group[key]=[]
+        group[key].append(word)
+    return list(group.values())
+words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+print(grouping(words))        
 
 
 
