@@ -184,19 +184,35 @@
 # words = ["eat", "tea", "tan", "ate", "nat", "bat"]
 # print(grouping(words))        
 
-nums = [10, 5, 8, 20, 15,23]
-newnums=[]
-maximum=0
-for num in nums:
-    maximum=max(maximum,num)
-for num in nums:
-    difference=maximum-num
-    if difference>0:
-        newnums.append(num)
-maximum2=0        
-for numbers in newnums:
-    maximum2=max(maximum2,numbers)
-print(maximum2)    
+# nums = [4,6,7,8,9]
+# newnums=[]
+# maximum=0
+# for num in nums:
+#     maximum=max(maximum,num)
+# for num in nums:
+#     difference=maximum-num
+#     if difference>0:
+#         newnums.append(num)
+# maximum2=0        
+# for numbers in newnums:
+#     maximum2=max(maximum2,numbers)
+# print(maximum2)   
+nums = [1,2,4,5,8,9]
+
+for i in range(len(nums)-1):
+
+    current = nums[i]
+    next_num = nums[i+1]
+
+    for missing in range(current + 1, next_num):
+        print(missing)
+
+
+         
+    
+         
+
+
             
 
 
