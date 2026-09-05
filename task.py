@@ -172,17 +172,33 @@
 #             product=product*nums[j]
 #     newnums.append(product)
 # print(newnums)   
-def grouping(words):
-    group={}
-    for word in words:
-        key=sorted(word)
-        key=str(key)
-        if key not in group:
-            group[key]=[]
-        group[key].append(word)
-    return list(group.values())
-words = ["eat", "tea", "tan", "ate", "nat", "bat"]
-print(grouping(words))        
+# def grouping(words):
+#     group={}
+#     for word in words:
+#         key=sorted(word)
+#         key=str(key)
+#         if key not in group:
+#             group[key]=[]
+#         group[key].append(word)
+#     return list(group.values())
+# words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+# print(grouping(words))        
+
+nums = [10, 5, 8, 20, 15,23]
+newnums=[]
+maximum=0
+for num in nums:
+    maximum=max(maximum,num)
+for num in nums:
+    difference=maximum-num
+    if difference>0:
+        newnums.append(num)
+maximum2=0        
+for numbers in newnums:
+    maximum2=max(maximum2,numbers)
+print(maximum2)    
+            
+
 
 
 
