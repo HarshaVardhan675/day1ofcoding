@@ -206,26 +206,43 @@
 
 #     for missing in range(current + 1, next_num):
 #         print(missing)
-s = input("Enter a string: ")
+# s = input("Enter a string: ")
 
-freq = {}
+# freq = {}
 
-for ch in s:
-    if ch in freq:
-        freq[ch] += 1
-    else:
-        freq[ch] = 1
+# for ch in s:
+#     if ch in freq:
+#         freq[ch] += 1
+#     else:
+#         freq[ch] = 1
 
-max_char = ""
-max_freq = 0
+# max_char = ""
+# max_freq = 0
 
-for ch in freq:
-    if freq[ch] > max_freq:
-        max_freq = freq[ch]
-        max_char = ch
+# for ch in freq:
+#     if freq[ch] > max_freq:
+#         max_freq = freq[ch]
+#         max_char = ch
 
-print("Character with highest frequency:", max_char)
-print("Frequency:", max_freq)
+# print("Character with highest frequency:", max_char)
+# print("Frequency:", max_freq)
+
+# a=int(input("enter the number a: "))
+# b=int(input("enter the number b: "))
+# i=1
+# maximum=1
+# if a>b:
+#     smallest=b
+# else:
+#     smallest=a
+# while i<=smallest:
+#     if a%i==0 and b%i==0:
+#         maximum=max(maximum,i)
+#     i=i+1
+# print(maximum) 
+
+        
+
 
 
 
