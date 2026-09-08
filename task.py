@@ -263,6 +263,20 @@
 #     print(maxproduct)   
 # nums=[2,3,10,5,9,20]
 # print(max_product(nums))
+a=0
+b=1
+n=int(input("How many digits you want: "))
+i=1
+fibonaci=[0,1]
+while i<=n:
+    newnumber=a+b
+    fibonaci.append(newnumber)
+    a=b
+    b=newnumber
+    i=i+1
+
+print(fibonaci)
+    
 
 
 
