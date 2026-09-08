@@ -240,8 +240,31 @@
 #         maximum=max(maximum,i)
 #     i=i+1
 # print(maximum) 
+# a=int(input("Enter the digit: "))
+# i=1
+# sum=0
+# while i<a:
+#     if a%i==0:
+#         sum=sum+i
+#     i=i+1
+# if sum==a:
+#     print(" it is a perfect number")
+# else:
+#     print(" it is not a perfect number")     
+
 
         
+# def max_product(nums):
+#     maxproduct=1
+#     for i in range(0,len(nums)):
+#       for j in range(i+1,len(nums)):
+#         product=nums[i]*nums[j]
+#         maxproduct=max(maxproduct,product)
+#     print(maxproduct)   
+# nums=[2,3,10,5,9,20]
+# print(max_product(nums))
+
+
 
 
 
