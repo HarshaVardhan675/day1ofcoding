@@ -263,19 +263,64 @@
 #     print(maxproduct)   
 # nums=[2,3,10,5,9,20]
 # print(max_product(nums))
-a=0
-b=1
-n=int(input("How many digits you want: "))
-i=1
-fibonaci=[0,1]
-while i<=n:
-    newnumber=a+b
-    fibonaci.append(newnumber)
-    a=b
-    b=newnumber
-    i=i+1
+# a=0
+# b=1
+# n=int(input("How many digits you want: "))
+# i=1
+# fibonaci=[0,1]
+# while i<=n:
+#     newnumber=a+b
+#     fibonaci.append(newnumber)
+#     a=b
+#     b=newnumber
+#     i=i+1
 
-print(fibonaci)
+# print(fibonaci)
+
+
+# nums = [16,17,4,3,5,2]
+
+# max_so_far = nums[-1]
+# leaders = [max_so_far]
+
+# for i in range(len(nums)-2, -1, -1):
+
+#     if nums[i] > max_so_far:
+
+#         leaders.append(nums[i])
+#         max_so_far = nums[i]
+
+# leaders.reverse()
+
+# print(leaders)
+n=int(input("enter the number: "))
+temp=n
+digit=0
+while temp>0:
+    digit+=1
+    temp=temp//10
+for i in range(digit):
+    max_num = 0
+
+for i in range(digit):
+
+    left = n // (10 ** (digit - i))
+    right = n % (10 ** (digit - i - 1))
+
+    new_num = left * (10 ** (digit - i - 1)) + right
+
+    if new_num > max_num:
+        max_num = new_num
+
+print(max_num)
+
+
+
+
+       
+    
+
+
     
 
 
