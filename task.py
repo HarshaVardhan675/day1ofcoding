@@ -293,32 +293,47 @@
 # leaders.reverse()
 
 # print(leaders)
-n=int(input("enter the number: "))
-temp=n
-digit=0
-while temp>0:
-    digit+=1
-    temp=temp//10
-for i in range(digit):
-    max_num = 0
+# n=int(input("enter the number: "))
+# temp=n
+# digit=0
+# while temp>0:
+#     digit+=1
+#     temp=temp//10
+# for i in range(digit):
+#     max_num = 0
 
-for i in range(digit):
+# for i in range(digit):
 
-    left = n // (10 ** (digit - i))
-    right = n % (10 ** (digit - i - 1))
+#     left = n // (10 ** (digit - i))
+#     right = n % (10 ** (digit - i - 1))
 
-    new_num = left * (10 ** (digit - i - 1)) + right
+#     new_num = left * (10 ** (digit - i - 1)) + right
 
-    if new_num > max_num:
-        max_num = new_num
+#     if new_num > max_num:
+#         max_num = new_num
 
-print(max_num)
+# print(max_num)
 
+# num = input("Enter number: ")
 
+# max_num = 0
 
+# for i in range(len(num)):
 
-       
-    
+#     new_num = num[:i] + num[i+1:]
+
+#     if int(new_num) > max_num:
+#         max_num = int(new_num)
+
+# print(max_num)
+sentence=input("enter the sentence: ")
+words=sentence.split()
+for word in words:
+    rev=""
+    for ch in word:
+        rev=ch+rev
+    print(rev,end=" ")    
+
 
 
     
