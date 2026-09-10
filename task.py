@@ -326,13 +326,32 @@
 #         max_num = int(new_num)
 
 # print(max_num)
-sentence=input("enter the sentence: ")
-words=sentence.split()
-for word in words:
-    rev=""
-    for ch in word:
-        rev=ch+rev
-    print(rev,end=" ")    
+# sentence=input("enter the sentence: ")
+# words=sentence.split()
+# for word in words:
+#     rev=""
+#     for ch in word:
+#         rev=ch+rev
+#     print(rev,end=" ")    
+n=int(input("enter the number: "))
+adddigit=int(input("enter the digit you want to add to get maximum: "))
+temp=n
+count=0
+max_num=0
+while temp>0:
+    temp=temp//10
+    count=count+1
+for i in range(0,count):
+    left=n//(10**(count-i))
+    right=n%(10**(count-i))
+    new_num=left*(10**(count+1-i))+adddigit*(10**(count-i))+right
+    if new_num>max_num:
+        max_num=new_num
+print(max_num) 
+       
+
+
+  
 
 
 
