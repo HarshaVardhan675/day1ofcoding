@@ -333,22 +333,55 @@
 #     for ch in word:
 #         rev=ch+rev
 #     print(rev,end=" ")    
-n=int(input("enter the number: "))
-adddigit=int(input("enter the digit you want to add to get maximum: "))
-temp=n
-count=0
-max_num=0
-while temp>0:
-    temp=temp//10
-    count=count+1
-for i in range(0,count):
-    left=n//(10**(count-i))
-    right=n%(10**(count-i))
-    new_num=left*(10**(count+1-i))+adddigit*(10**(count-i))+right
-    if new_num>max_num:
-        max_num=new_num
-print(max_num) 
-       
+# n=int(input("enter the number: "))
+# adddigit=int(input("enter the digit you want to add to get maximum: "))
+# temp=n
+# count=0
+# max_num=0
+# while temp>0:
+#     temp=temp//10
+#     count=count+1
+# for i in range(0,count):
+#     left=n//(10**(count-i))
+#     right=n%(10**(count-i))
+#     new_num=left*(10**(count+1-i))+adddigit*(10**(count-i))+right
+#     if new_num>max_num:
+#         max_num=new_num
+# print(max_num)
+# def is_prime(n):
+
+#     if n < 2:
+#         return False
+
+#     for i in range(2, int(n ** 0.5) + 1):
+
+#         if n % i == 0:
+#             return False
+
+#     return True
+
+
+# def nearest_prime(num):
+
+#     distance = 0
+
+#     while True:
+
+#         distance += 1
+
+#         left = num - distance
+#         right = num + distance
+
+#         if is_prime(left):
+#             return left
+
+#         if is_prime(right):
+#             return right
+
+
+# num = int(input("Enter a number: "))
+
+# print("Nearest prime =", nearest_prime(num))
 
 
   
