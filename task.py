@@ -184,7 +184,7 @@
 # words = ["eat", "tea", "tan", "ate", "nat", "bat"]
 # print(grouping(words))        
 
-# nums = [4,6,7,8,9]
+# nums = [3,5,7,8,9,10]
 # newnums=[]
 # maximum=0
 # for num in nums:
@@ -296,16 +296,16 @@
 # n=int(input("enter the number: "))
 # temp=n
 # digit=0
+# max_num = 0
 # while temp>0:
 #     digit+=1
 #     temp=temp//10
-# for i in range(digit):
-#     max_num = 0
 
 # for i in range(digit):
+    
 
 #     left = n // (10 ** (digit - i))
-#     right = n % (10 ** (digit - i - 1))
+#     right = n % (10 ** (digit - i-1))
 
 #     new_num = left * (10 ** (digit - i - 1)) + right
 
@@ -382,34 +382,107 @@
 # num = int(input("Enter a number: "))
 
 # print("Nearest prime =", nearest_prime(num))
+# num = input("Enter number: ")
+# max_num = 0
+# for digit in num:
+#     if int(digit) % 2 == 0:
+
+#         remaining = list(num)
+#         remaining.remove(digit)
+
+#         remaining.sort(reverse=True)
+
+#         new_num = ""
+
+#         for d in remaining:
+#             new_num += d
+
+#         new_num += digit
+
+#         if int(new_num) > max_num:
+#             max_num = int(new_num)
+
+# print(max_num)
+# n=int(input("enter the number: "))
+# temp=n
+# digits=0
+# sum=0
+# while temp>0:
+#     temp=temp//10
+#     digits+=1
+# i=1   
+# while n>0:
+#     d=n%10
+#     n=n//10
+#     sum=sum+d*10**(digits-i)
+#     i=i+1
+# print(sum)
+# n=int(input("enter the number u want:") )
+# i=1
+# while i<=n:
+#     j=1
+#     while j<=i:
+#         print(j,end="")
+#         j=j+1
+#     print()    
+#     i=i+1
 
 
-  
 
+# L1 = [4,3,3,5,6,7,3]
+# L2 = [2,3,4,6,7,9,11,3]
+# L3 = [3,9,11,13,2,3,4,6,5]
 
+# result = []
 
-    
+# for num in L1:
 
+#     if num in L2 and num in L3:
 
+#         result.append(num)
 
+#         L2.remove(num)
+#         L3.remove(num)
 
+# print(result)
 
+# numbers = [4,3,3,3,5,7,6]
+# newlist = []
+# while len(numbers) > 0:
 
+#     minimum = numbers[0]
 
+#     for num in numbers:
+#         if num < minimum:
+#             minimum = num
 
+#     newlist.append(minimum)
+#     numbers.remove(minimum)
 
-         
-    
-         
+# print(newlist)
+num = int(input("Enter a number: "))
 
+for start in range(1, num):
 
-            
+    total = 0
+    expression = ""
 
+    for current in range(start, num):
 
+        total += current
 
+        if expression == "":
+            expression = str(current)
+        else:
+            expression = expression + "+" + str(current)
 
+        if total == num:
+            print(expression)
+            break
 
-
+        if total > num:
+            break
+     
 
 
 
