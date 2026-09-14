@@ -460,30 +460,51 @@
 #     numbers.remove(minimum)
 
 # print(newlist)
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-for start in range(1, num):
+# for start in range(1, num):
 
-    total = 0
-    expression = ""
+#     total = 0
+#     expression = ""
 
-    for current in range(start, num):
+#     for current in range(start, num):
 
-        total += current
+#         total += current
 
-        if expression == "":
-            expression = str(current)
-        else:
-            expression = expression + "+" + str(current)
+#         if expression == "":
+#             expression = str(current)
+#         else:
+#             expression = expression + "+" + str(current)
 
-        if total == num:
-            print(expression)
-            break
+#         if total == num:
+#             print(expression)
+#             break
 
-        if total > num:
-            break
+#         if total > num:
+#             break
+
+
+# n=int(input("enter the number: "))
+# c=int(input("closest multiple of: "))
+# difference=0
+# while True:
+    
+#     left=n-difference
+
+#     right=n+difference
+
+#     if left%c==0:
+#         print(left)
+#         break
+#     elif right%c==0:
+#         print(right) 
+#         break
+#     else:
+#         difference=difference+1   
+ 
+
+
      
-
 
 
 
