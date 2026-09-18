@@ -500,7 +500,51 @@
 #         print(right) 
 #         break
 #     else:
-#         difference=difference+1   
+#         difference=difference+1
+# n=int(input("enter number of lines: "))
+
+
+# for i in range(1,n+1):
+#     j=1
+#     while j<=i:
+
+#         print(j,end="")
+
+#         j=j+1
+#     print()
+
+# n=int(input("enter the number: "))
+# sum1=0
+# sum2=0
+# count=0
+# temp=n
+# i=1
+# while n>0:
+
+#     d=n%10
+#     n=n//10
+#     if i%2==1:
+#         sum1=sum1+d
+        
+#     elif i%2==0:
+#         sum2=sum2+d
+#     i=i+1    
+# if sum1==sum2:
+        
+#         print("it is divisible by 11") 
+# else:
+#      print("not divisible by 11")       
+               
+
+    
+
+     
+
+
+    
+
+
+
  
 
 
