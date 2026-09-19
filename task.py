@@ -448,7 +448,7 @@
 
 # numbers = [4,3,3,3,5,7,6]
 # newlist = []
-# while len(numbers) > 0:
+# while len(numbers)>0:
 
 #     minimum = numbers[0]
 
@@ -533,13 +533,68 @@
         
 #         print("it is divisible by 11") 
 # else:
-#      print("not divisible by 11")       
-               
+#      print("not divisible by 11")
+# n=int(input("enter the value of n: "))
+# i=1
+# maximum=0
+# c=0
+# sum=0
+# while i<=n:
+#     sum=sum+i
+#     c=c+1
+#     if sum%2==0:
+#         if c>maximum:
+#             maximum=c
+#     i=i+1        
+# print(maximum)
 
-    
+# n=int(input("enter the value of n: "))
+# i=1
+# while i<=n:
+#     j=1
+#     while j<=i:
+#         print("*",end="")
+#         j+=1
+#     print()    
+#     i=i+1
+# y=n-1    
+# while y>0:
+#     j=1
+#     while j<=y:
+#         print("*",end="")
+#         j=j+1
+#     print()
+#     y=y-1
 
-     
+# a=int(input("enter the number of digit number u want: "))
+# for n in range(10**(a-1),10**(a)):
+#     temp=n
+#     if temp%3==0:
+#         if temp%9!=0:
+#             print(n)
+#             break
 
+# n=int(input("enter the number: "))
+# temp=n
+# count=0
+# sum=0
+# e=0
+# while n>0:
+#     n=n//10
+#     count=count+1
+# n=temp    
+# while temp>0:
+#     d=temp%10
+#     temp=temp//10
+#     sum=sum+d**(count-e)
+#     e=e+1
+# if sum==n:
+#     print("discarium")
+# else:
+#     print("not discarium")       
+
+n=int(input())
+print(n&"s")
 
     
 
